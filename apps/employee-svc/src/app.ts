@@ -1,6 +1,5 @@
 import express, { Router } from 'express';
-import { employeeRoute } from '@portal-cms-backend/employee-commons';
-import {initDB} from '../../../packages/employee-commons/src/database-config/db-connection'
+import { initDB, employeeRoute } from '@portal-cms-backend/employee-commons';
 
 initDB();
 
