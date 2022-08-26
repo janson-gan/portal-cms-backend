@@ -1,9 +1,9 @@
-import express, { Router } from 'express';
+import express, { Application, Router } from 'express';
 import { initDB, employeeRoute } from '@portal-cms-backend/employee-commons';
 
 initDB();
 
-const app = express();
+const app: Application = express();
 
 const apiV1Route = Router();
 
