@@ -7,8 +7,8 @@ const app: Application = express();
 
 const apiV1Route = Router();
 
-app.use('/api/v1', apiV1Route);
+app.use('/api/v1/admin', apiV1Route);
 
-apiV1Route.use('/admin', employeeRoute);
+apiV1Route.use('/employees', employeeRoute);
 
 export default app;
